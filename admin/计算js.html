@@ -1,0 +1,16 @@
+<html>
+    <script type="text/javascript">
+        function sum() {
+            var a = document.getElementById("a");
+            var b = document.getElementById("b");
+            var s = document.getElementById("sum");
+            if(a.value === "" || b.value === "") {
+                return;
+            }
+            s.value = parseFloat(a.value) * parseFloat(b.value);
+        }
+    </script>
+<input type="text" id="a" onkeyup="sum(this);" />
+<input type="text" id="b" onkeyup="sum(this);" />
+<input type="text" id="sum" />
+</html>
